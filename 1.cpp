@@ -31,6 +31,12 @@ class Hero {
 
 };
 
+class Student {
+    int a;
+    int b;
+    char c;
+};
+
 int main(){
     // creation of object
     Hero ramesh;
@@ -45,8 +51,13 @@ int main(){
     cout<<"Ramesh health is "<<ramesh.gethealth()<<endl;
     cout << "Level of Ramesh is " << ramesh.level << endl;
     
-   
+    cout<<"Size of Ramesh " <<sizeof(ramesh)<<endl;
     // cout << "size: " << sizeof(ramesh) << endl;
+
+
+    Student s1;
+    cout<<"Size of s1 is "<<sizeof(s1)<<endl; //12 (4*3)(dur to padding - system always want to store the sizes in the memory in the multiple of sizes so extra size known as padding is added into ch variable)
+    //The difference between the expected and actual size is due to the padding added by the compiler to meet alignment requirements. Therefore, the output size of 8 bytes is correct given the typical behavior of compilers regarding memory alignment and padding.
 
     return 0;
 }
