@@ -21,6 +21,7 @@ public:
 	friend class F;
 };
 
+
 // Here, class F is declared as a
 // friend inside class GFG. Therefore,
 // F is a friend of class GFG. Class F
